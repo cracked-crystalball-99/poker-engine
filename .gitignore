@@ -29,7 +29,9 @@ settings.local.*
 dist/
 build/
 
-# Local development scripts (if any)
+# Local development and deployment scripts
+deploy.ps1
 sync-to-xampp.*
 quick-sync.*
 *-localhost*
+test-localhost.ps1
