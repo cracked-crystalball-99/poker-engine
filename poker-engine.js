@@ -337,8 +337,8 @@ class PokerEngine {
         
         case 'raise':
         const currentBet = this.getCurrentBet();
-        const callAmount = currentBet - player.currentBet;
-        const totalRaise = callAmount + amount;
+        const raiseCallAmount = currentBet - player.currentBet;
+        const totalRaise = raiseCallAmount + amount;
         const actualRaise = Math.min(totalRaise, player.chips);
         
         player.chips -= actualRaise;
